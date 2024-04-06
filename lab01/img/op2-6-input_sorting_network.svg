@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 506.3 329.36" style="enable-background:new 0 0 506.3 329.36;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+	.st1{font-family:'ArialMT';}
+	.st2{font-size:36px;}
+	.st3{stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<line class="st0" x1="18.75" y1="86.43" x2="473.27" y2="86.43"/>
+<line class="st0" x1="18.75" y1="128.87" x2="473.27" y2="128.87"/>
+<line class="st0" x1="18.75" y1="171.31" x2="473.27" y2="171.31"/>
+<line class="st0" x1="18.75" y1="213.75" x2="473.27" y2="213.75"/>
+<line class="st0" x1="20.81" y1="256.19" x2="475.33" y2="256.19"/>
+<line class="st0" x1="20.81" y1="298.63" x2="475.33" y2="298.63"/>
+<line class="st0" x1="54.85" y1="86.43" x2="54.85" y2="128.87"/>
+<line class="st0" x1="54.85" y1="171.31" x2="54.85" y2="213.75"/>
+<line class="st0" x1="54.85" y1="256.19" x2="54.85" y2="298.63"/>
+<line class="st0" x1="130.94" y1="86.43" x2="130.94" y2="171.31"/>
+<line class="st0" x1="130.94" y1="213.75" x2="130.94" y2="298.63"/>
+<line class="st0" x1="207.04" y1="256.19" x2="207.04" y2="128.87"/>
+<line class="st0" x1="283.14" y1="296.19" x2="283.14" y2="256.19"/>
+<line class="st0" x1="283.14" y1="213.75" x2="283.14" y2="171.31"/>
+<line class="st0" x1="283.14" y1="128.87" x2="283.14" y2="86.43"/>
+<line class="st0" x1="359.24" y1="256.19" x2="359.24" y2="213.75"/>
+<line class="st0" x1="359.24" y1="171.31" x2="359.24" y2="128.87"/>
+<line class="st0" x1="436.8" y1="213.75" x2="436.8" y2="171.31"/>
+<text transform="matrix(1 0 0 1 61.7135 49.0566)" class="st1 st2">6-input sorting network</text>
+<ellipse class="st3" cx="54.85" cy="86.43" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="130.94" cy="86.43" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="54.85" cy="128.87" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="130.94" cy="128.87" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="54.85" cy="171.31" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="130.94" cy="171.31" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="54.85" cy="213.75" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="130.94" cy="213.75" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="54.85" cy="256.19" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="54.85" cy="298.63" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="130.94" cy="298.63" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="283.14" cy="256.19" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="359.24" cy="256.19" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="283.14" cy="213.75" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="283.14" cy="170.51" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="283.14" cy="128.87" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="207.04" cy="128.87" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="283.14" cy="86.43" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="359.24" cy="213.75" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="436.8" cy="213.75" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="359.24" cy="171.31" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="436.8" cy="171.31" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="359.24" cy="128.95" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="207.04" cy="256.19" rx="5.5" ry="5.31"/>
+<ellipse class="st3" cx="283.14" cy="298.63" rx="5.5" ry="5.31"/>
+</svg>
