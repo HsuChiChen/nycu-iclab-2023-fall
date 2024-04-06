@@ -83,14 +83,14 @@ $$
 - 均出現 $V_{GS} - 1$ 可以先計算這個結果。
 - 在 $I_D$ 運算還需要一個乘法器，分別做 $(V_{GS} - 1)$ 的平方與 $2(V_{GS} - 1)V_{DS} - V_{DS}^2 = V_{DS} \cdot [2(V_{GS} - 1) - V_{DS}]$ 。
 
-因此假設 $V_{GS}' = V_{GS} - 1$ ，上述公式可以共用硬體運算變成
+因此假設 $V_{OV} = V_{GS} - 1$ ，上述公式可以共用硬體運算變成
 
 $$
 \begin{align*}
-I'_{D} &= V_{DS} \cdot [2V'_{GS} - V_{DS}], \text{when } V'_{GS} > V_{DS}\\
-I'_{D} &= V'_{GS} \cdot V'_{GS}\\
-g'_{m} &= V_{DS} \cdot 2, \text{when } V'_{GS} > V_{DS}\\
-g'_{m} &= V'_{GS} \cdot 2
+I_{D}' &= V_{DS} \cdot [2V_{OV} - V_{DS}], \text{when } V_{OV} > V_{DS}\\
+I_{D}' &= V_{OV} \cdot V_{OV}\\
+g_{m}' &= V_{DS} \cdot 2, \text{when } V_{OV} > V_{DS}\\
+g_{m}' &= V_{OV} \cdot 2
 \end{align*}
 $$
 
