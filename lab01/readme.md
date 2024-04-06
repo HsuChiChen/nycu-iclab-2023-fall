@@ -19,17 +19,22 @@ V_{GS} - 1 > V_{DS}
 $$
 
 電流與增益計算公式如下
+
 $$
 \begin{align*}
 I_{D} &= \frac{1}{3} \cdot W \cdot \left( 2(V_{GS} - 1)V_{DS} - V_{DS}^2 \right)\\
 g_{m} &= \frac{2}{3} \cdot W \cdot V_{DS}\\
 \end{align*}
 $$
+
 判定MOS為saturation mode時
+
 $$
 V_{GS} - 1 \leq V_{DS}
 $$
+
 電流與增益計算公式如下
+
 $$
 \begin{align*}
 I_{D} &= \frac{1}{3} \cdot W \cdot (V_{GS} - 1)^2\\
@@ -42,13 +47,16 @@ $$
 ### 運算3 - 計算平均值
 根據2-bit選擇訊號線選擇合適運算。<br>
 在`mode[0] = 1`是計算電流的前3大或是後3小值的加權平均值
+
 $$
 \begin{align*}
 \text{Top 3 : } I_{avg} &= \frac{1}{12} \cdot (3 \times n_0 + 4 \times n_1 + 5 \times n_2) \quad (\text{mode}[1] = 1)\\
 \text{Bottom 3 : } I_{avg} &= \frac{1}{12} \cdot (3 \times n_3 + 4 \times n_4 + 5 \times n_5) \quad (\text{mode}[1] = 0)
 \end{align*}
 $$
+
 在`mode[0] = 0`是計算增益的前3大或是後3小值的平均值
+
 $$
 \begin{align*}
 \text{Top 3 : } g_{avg} &= \frac{1}{3} \cdot (n_0 + n_1 + n_2) \quad (\text{mode}[1] = 1)\\
@@ -59,6 +67,7 @@ $$
 ## 功能性與優化思路
 ### 運算1 - 計算6組輸入的電流或是增益
 觀察以下4個運算公式(電路中的datapath)與條件式(電路中的control unit)
+
 $$
 \begin{align*}
 I_{D} &= \frac{1}{3} \cdot W \cdot \left( 2(V_{GS} - 1)V_{DS} - V_{DS}^2 \right), \text{when } V_{GS} - 1 > V_{DS}\\
@@ -67,13 +76,15 @@ g_{m} &= \frac{2}{3} \cdot W \cdot V_{DS}, \text{when } V_{GS} - 1 > V_{DS}\\
 g_{m} &= \frac{2}{3} \cdot W \cdot (V_{GS} - 1)
 \end{align*}
 $$
+
 可以發現
 - 均出現 $W$ 項，可以移到運算1最後再相乘。
 - 均出現"除以3"，除法器的電路面積很大和計算時間很長，**在數位電路設計中，要盡可能避免使用到除法**，可以把"除以3"運算放到運算3選擇最大或是最小的3個值後再做運算，如此就可以把除法器原本個別6個輸入需要6個除法器，降低為3個除法器。
-- 均出現$V_{GS} - 1$可以先計算這個結果。
-- 在 $I_D$ 運算還需要一個乘法器，分別做 $(V_{GS} - 1)$的平方與$2(V_{GS} - 1)V_{DS} - V_{DS}^2 = V_{DS} \cdot [2(V_{GS} - 1) - V_{DS}]$ 。
+- 均出現 $V_{GS} - 1$ 可以先計算這個結果。
+- 在 $I_D$ 運算還需要一個乘法器，分別做 $(V_{GS} - 1)$ 的平方與 $2(V_{GS} - 1)V_{DS} - V_{DS}^2 = V_{DS} \cdot [2(V_{GS} - 1) - V_{DS}]$ 。
 
-因此假設 $V'_{GS} = V_{GS} - 1$ ，上述公式可以共用硬體運算變成
+因此假設 $V'_{GS} = V_{GS} - 1$  ，上述公式可以共用硬體運算變成
+
 $$
 \begin{align*}
 I'_{D} &= V_{DS} \cdot [2V'_{GS} - V_{DS}], \text{when } V'_{GS} > V_{DS}\\
@@ -82,7 +93,8 @@ g'_{m} &= V_{DS} \cdot 2, \text{when } V'_{GS} > V_{DS}\\
 g'_{m} &= V'_{GS} \cdot 2
 \end{align*}
 $$
-畫成電路與程式碼即為
+
+畫成電路與程式碼即為<br>
 ![](img/op1-caculate_I_d_or_g_m.png)
 
 ```verilog
