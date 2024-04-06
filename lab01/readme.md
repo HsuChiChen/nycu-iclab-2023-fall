@@ -1,5 +1,6 @@
 # iclab 01 Supper MOSFET Calculator(SMC)
 - 時間 : 第2周 2023/09/20(三) - 2023/09/25(一)
+- GitHub的Latex數學式會跑掉，請看[HackMD文檔](https://hackmd.io/@HsuChiChen/iclab01)。
 
 ## 成績
 - 功能正確性 70%
