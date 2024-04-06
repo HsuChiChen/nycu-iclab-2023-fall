@@ -13,7 +13,7 @@
 
 |項目|學習主題|名稱|1st demo通過率|分數|效能排名|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|Lab01|組合電路計算MOS的電流 / 轉導|Supper MOSFET Calculator|96% (143/149)|92.35|26% (39/149)|
+|Lab01|組合電路計算MOS的電流 / 增益|Supper MOSFET Calculator|96% (143/149)|92.35|26% (39/149)|
 |Lab02|循序電路做梯形渲染|Calculation on the coordinates|79% (118/149)|96.42|13% (17/134)|
 |Lab03|寫Pattern練AXI Lite與SPI簡化版協定|AXI-SPI DataBridge|77% (115/149)|100|NA|
 |Lab04|使用DesignWare的浮點數運算IP|Siamese Neural Network|62% (93/149)|88.35|40% (48/121)|
