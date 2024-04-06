@@ -28,3 +28,6 @@
 |Lab12|熟悉APR flow|Matrix convolution, max pooling and transposed convolution(with APR)|81% (120/149)|87.56|29% (35/121)|
 |Final project|從RTL到APR flow並使用AXI與DRAM溝通|single core Central Processing Unit|62% (92/149)|104.62|19% (22/117)|
 
+## Lab01 Supper MOSFET Calculator
+- [說明文檔](https://hackmd.io/@HsuChiChen/iclab01)
+- [程式碼](https://github.com/HsuChiChen/NYCU-iclab-2023-fall/tree/main/lab01)
